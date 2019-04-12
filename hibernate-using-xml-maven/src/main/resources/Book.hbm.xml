@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+    <hibernate-mapping>
+		<class name="org.cetpa.beans.Book" table="book">
+			<id name="isbn" column="book_isbn">
+				<generator class="assigned">
+				</generator>	
+			</id>
+			<property name="topic" column="book_topic"></property>
+		</class>
+    </hibernate-mapping>
